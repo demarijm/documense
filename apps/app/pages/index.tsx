@@ -26,6 +26,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
+import Empty from '../components/Empty'
 
 const navigation = [
   { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
@@ -272,7 +273,9 @@ export default function Example() {
               <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
                 {/* Replace with your content */}
                 <div className="py-4">
-                  <div className="h-96 rounded-lg border-4 border-dashed border-gray-200" />
+                  <div className="h-96 rounded-lg flex items-center border-4 border-dashed border-gray-200">
+                  <Empty />
+                    </div>
                 </div>
                 {/* /End replace */}
               </div>
